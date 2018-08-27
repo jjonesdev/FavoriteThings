@@ -10,7 +10,7 @@ import UIKit
 
 class FavoriteThingsViewController: UITableViewController {
     
-    var favoriteThings = ["Fav1", "Fav2", "Fav3", "Fav4", "Fav5", "Fav6", "Fav7", "Fav8", "Fav9", "Fav10", "Fav11", "Fav12", "Fav13", "Fav14", "Fav15"]
+    let favoriteThings = ["Fav1", "Fav2", "Fav3", "Fav4", "Fav5", "Fav6", "Fav7", "Fav8", "Fav9", "Fav10", "Fav11", "Fav12", "Fav13", "Fav14", "Fav15"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,10 @@ class FavoriteThingsViewController: UITableViewController {
         cell.textLabel?.text = favoriteThings[indexPath.row]
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
 
