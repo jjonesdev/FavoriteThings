@@ -10,7 +10,7 @@ import UIKit
 
 class FavoriteThingsViewController: UITableViewController {
     
-    let favoriteThings = ["Fav1", "Fav2", "Fav3", "Fav4", "Fav5", "Fav6", "Fav7", "Fav8", "Fav9", "Fav10", "Fav11", "Fav12", "Fav13", "Fav14", "Fav15"]
+    var favoriteThings = ["Fav1", "Fav2", "Fav3", "Fav4", "Fav5", "Fav6", "Fav7", "Fav8", "Fav9", "Fav10", "Fav11", "Fav12", "Fav13", "Fav14", "Fav15"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,13 @@ class FavoriteThingsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            favoriteThings.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 
 }
 
