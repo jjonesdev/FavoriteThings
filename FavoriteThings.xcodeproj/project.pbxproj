@@ -12,6 +12,7 @@
 		173FE10E21349313001FAF12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173FE10C21349313001FAF12 /* Main.storyboard */; };
 		173FE11021349314001FAF12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173FE10F21349314001FAF12 /* Assets.xcassets */; };
 		173FE11321349314001FAF12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173FE11121349314001FAF12 /* LaunchScreen.storyboard */; };
+		173FE11D21357822001FAF12 /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173FE11C21357822001FAF12 /* AddItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		173FE10F21349314001FAF12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		173FE11221349314001FAF12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		173FE11421349314001FAF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		173FE11C21357822001FAF12 /* AddItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				173FE10821349313001FAF12 /* AppDelegate.swift */,
 				173FE10A21349313001FAF12 /* FavoriteThingsViewController.swift */,
+				173FE11C21357822001FAF12 /* AddItem.swift */,
 				173FE10C21349313001FAF12 /* Main.storyboard */,
 				173FE10F21349314001FAF12 /* Assets.xcassets */,
 				173FE11121349314001FAF12 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				173FE10B21349313001FAF12 /* FavoriteThingsViewController.swift in Sources */,
 				173FE10921349313001FAF12 /* AppDelegate.swift in Sources */,
+				173FE11D21357822001FAF12 /* AddItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,12 +9,16 @@
 import UIKit
 
 class FavoriteThingsViewController: UITableViewController {
-    
+        
     var favoriteThings = ["Fav1", "Fav2", "Fav3", "Fav4", "Fav5", "Fav6", "Fav7", "Fav8", "Fav9", "Fav10", "Fav11", "Fav12", "Fav13", "Fav14", "Fav15"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        self.title = "My Favs"
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,8 +45,10 @@ class FavoriteThingsViewController: UITableViewController {
         if editingStyle == .delete {
             favoriteThings.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            tableView.insertRows(at: [indexPath], with: .fade)
+            favoriteThings.append("Test")
         }
     }
-
 }
 
